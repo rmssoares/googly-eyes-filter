@@ -1,0 +1,16 @@
+model:
+  face_model:
+    type: "DNN"
+    DNN:
+      prototxt: "models/deploy.prototxt"
+      caffemodel: "models/res10_300x300_ssd_iter_140000_fp16.caffemodel"
+  eye_model:
+    type: "HOG"
+    HOG:
+      eyes_landmarks: "models/eye_eyebrows_22.dat"
+service:
+  confidence_threshold: 0.5
+  googly_settings:
+    size_multiplier: 2
+    random_max_percent_inc: 0.2
+googly_path: "data/googly1.png"

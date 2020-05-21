@@ -117,6 +117,10 @@ These variables do the following:
 
 2. To test the code programmatically, a jupyter notebook can be found and booted up in the ```notebooks``` folder. You can also find images to test the code with here!
 
+3. Models and config taken from the following sources:
+    - [eye_eyebrows_22.dat](https://github.com/Luca96/dlib-minified-models/tree/master/face_landmarks)
+    - [deploy.prototxt and res10](https://github.com/spmallick/learnopencv/tree/master/FaceDetectionComparison/models)
+
 ## Authors
 
 * **Ricardo Soares** - [rmssoares](https://github.com/rmssoares)

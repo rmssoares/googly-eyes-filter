@@ -1,8 +1,8 @@
 
-# Googly project - Onfido
+# Googly project
 
 ---
-The present repository was produced as a code assessment for Onfido. The objective is to create a service with a single point, that "googlifies" (or, in layman terms, to convert human eyes in googly, fun eyes) every image taken as an input.
+The objective is to create a service that "googlifies" (or, in layman terms, to convert human eyes in googly, fun eyes) every image taken as an input.
 
 This README has the following sections:
 1. Getting Started
@@ -25,7 +25,7 @@ conda activate googly
 
 ####Install the project requirements
  
- (Note: one of the libraries, dlib, needs cmake to be installed.
+ (Note: one of the libraries, dlib, depends on cmake.
   If your operative system is MacOS, you can install it with ```brew install cmake```)
 ```
 python -m pip install -r requirements.txt
@@ -49,7 +49,7 @@ pytest --cov-report term-missing --cov=src/ tests/ --cov-fail-under=100
 ## Setting up - How to run this service?
 There are two ways to run this service: Locally, and by running it as a Docker container, and invoking the POST endpoint.
 
-To start the service locally, it's simple as running the supposed script:
+To start the service locally, it's as simple as running the supposed script:
 
 ```
 python src/server.py
@@ -67,7 +67,7 @@ As you might have noticed, we are adding a volume to our container. This will be
 ## Invoking the endpoints
 
 Now, the service is running! As you might have noticed in ```views.py```, there are two possible endpoints.
-They both follow the use case specified, although with a different approach"
+They both follow the use case specified, although with different approaches:
 
 - **/googlify** - takes in the image as multipart/form-data, and saves the resulting googlified picture in a specified directory.
 - **/googlify_base64** - takes the image in the form of a base64 string, and returns the image as a base64 string.
@@ -116,3 +116,9 @@ These variables do the following:
     - **googly_path** - the path for the googly eye's image! There's two googly options for now.
 
 2. To test the code programmatically, a jupyter notebook can be found and booted up in the ```notebooks``` folder. You can also find images to test the code with here!
+
+## Authors
+
+* **Ricardo Soares** - [rmssoares](https://github.com/rmssoares)
+
+For any inquiries, feel free to open up an issue.

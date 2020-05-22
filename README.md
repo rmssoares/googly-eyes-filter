@@ -1,5 +1,5 @@
 
-# Googly project - 72 hour challenge
+# Googly project
 
 ---
 The objective is to create a service that "googlifies" (or, in layman terms, to convert human eyes in googly, fun eyes) every image taken as an input.
